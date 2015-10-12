@@ -1,0 +1,4 @@
+ssh shark01 /home/hadi/VolpexMPI/trunk/hpx-tutorial-examples/hpx_hello_world -x shark01:7912 -l 4 --hpx:console --hpx:run-agas-server & 
+ssh shark02 /home/hadi/VolpexMPI/trunk/hpx-tutorial-examples/hpx_hello_world -x shark02:7912 -a shark01:7912 --hpx:worker &
+ssh shark03 /home/hadi/VolpexMPI/trunk/hpx-tutorial-examples/hpx_hello_world -x shark03:7912 -a shark01:7912 --hpx:worker &
+ssh shark04 /home/hadi/VolpexMPI/trunk/hpx-tutorial-examples/hpx_hello_world -x shark04:7912 -a shark01:7912 --hpx:worker
